@@ -383,6 +383,17 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-subscribe">
+                <p class="subscribe-link">Subscribe</p>
+                <form class="footer-form">
+                    <input type="email" name="footer-email" class="footer-input" placeholder="E-mail" />
+                    <button type="submit" class="footer-form-btn">Subscribe
+                        <svg class="button-subscribe" width="24" height="24">
+                            <use href="./images/icons.svg#icon-Frame-3-1"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
     <div class="backdrop is-open">
@@ -415,12 +426,24 @@
                         <use href="./images/icons.svg#icon-email-black-18dp-1-1"></use>
                     </svg>
                 </div>
-                <div>
-                    <label for="user-comment">Comment</label>
+                <div class="modal-comment">
+                    <label class="modal-label" for="user-comment">Comment</label>
                     <textarea class="modal-text" name="user-comment" id="user-comment"
                         placeholder="Text input"></textarea>
                 </div>
-                <button type="submit">Send</button>
+                <div class="modal-checkbox">
+                    <input type="checkbox" name="policy" id="policy" class="check-input visually-hidden" value="true" />
+                    <label class="check-text" for="policy">
+                        <span>
+                            <svg class="check-icon" width="10" height="8">
+                                <use href="./images/icons.svg#icon-Vector-1"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the <a href="">Privacy
+                            Policy</a>
+                    </label>
+                </div>
+                <button type="submit" class="modal-button-send" name="send form">Send</button>
             </form>
         </div>
     </div>
